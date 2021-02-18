@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django</title>
+    <style type="text/css">
+        * { box-sizing: border-box; }
+            body {
+            margin: 0;
+            background: url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)
+            }
+            nav { background: rgb(7, 7, 7); }
+            nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            }
+            nav a {
+            text-decoration: none;
+            outline: none;
+            display: block;
+            transition: .4s ease-in-out;
+            }
+            .topmenu {
+            text-align: center;
+            padding: 10px 0;
+            }
+            .topmenu > li {
+            display: inline-block;
+            position: relative;
+            }
+            .topmenu > li:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            width: 1px;
+            height: 12px;
+            background: #d2d2d2;
+            top: 16px;
+            box-shadow: 4px -2px 0 #d2d2d2;
+            transform: rotate(30deg);
+            }
+            .topmenu > li:last-child:after {
+            background: none;
+            box-shadow: none;
+            }
+            .topmenu > li > a {
+            padding: 12px 26px;
+            color: #fffdfd;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: 'Exo 2', sans-serif;
+            }
+            .topmenu li a:hover { color: #ff2104; }
+            .submenu {
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            width: 210px;
+            margin-left: -105px;
+            background: #fafafa;
+            border: 1px solid #ededed;
+            z-index: 5;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(.8);
+            transition: .4s ease-in-out;
+            }
+            .submenu li a {
+            padding: 10px 0;
+            margin: 0 10px;
+            border-bottom: 1px solid #efefef;
+            font-size: 12px;
+            color: #484848;
+            font-family: 'Kurale', serif;
+            }
+            .topmenu > li:hover .submenu {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+            }
+
+    </style>
+
+    <nav>
+        <ul class="topmenu">
+          <li><a href="sot/">Сотрудники</a></li>
+          <li><a href="reg/">Учетная запись</a></li>
+        </ul>
+    </nav>
+</head>
+    <head>
+        <form>
+            <style type="text/css"> 
+                @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+                body {
+                margin: 0;
+                display: justify;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: black;
+                }
+                h1 {
+                font-family: 'Roboto Slab', serif;
+                text-align: center;
+                font-size: 60px;
+                font-weight: normal;
+                color: transparent;
+                text-shadow: 0 0 1px #eee, 5px 5px 1px #00dcdc, -5px -2px 1px #ff3232;
+                animation: glitch 4s ease-in-out infinite alternate;
+                }
+                @keyframes glitch {
+                0%,40%,44%,58%,61%,65%,69%,73%,100% {transform:skewX(0deg);}
+                41% {transform: skewX(10deg);}
+                42% {transform: skewX(-10deg);}
+                59% {transform: skewX(40deg) skewY(10deg);}
+                60% {transform: skewX(-40deg) skewY(-10deg);}
+                63% {transform: skewX(10deg) skewY(-5deg);}
+                70% {transform: skewX(-50deg) skewY(-20deg);}
+                71% {transform: skewX(10deg) skewY(-10deg);}
+                }
+        </style>
+    
+        <h1>My first page on django</h1>
+        </form>
+
+    </head>
+    
+</head>
+</html>
